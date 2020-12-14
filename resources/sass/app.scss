@@ -1,0 +1,40 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.bg-mute {
+    background-color: $gray;
+}
+
+.contact-avatar {
+    text-transform: capitalize;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    padding: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+
+    &-female {
+        @extend .contact-avatar;
+        background-color: $female-color;
+    }
+
+    &-male {
+        @extend .contact-avatar;
+        background-color: $male-color;
+    }
+}
+
+.contact-full-name {
+    font-size: 16px;
+}
